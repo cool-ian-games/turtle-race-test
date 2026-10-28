@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --main-color: #B64EF1;
+    --accent-color: #FFFF51;
+    --background-color: #F1BFFD;
+}
+* {
+    font-family: "Quantico", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--background-color);
+}
+header {
+    background-color: var(--main-color);
+    width: 19vh;
+    aspect-ratio: 1/1;
+    position: fixed;
+    top: 5vh;
+    left: 2vw;
+    border-radius: 1vw;
+}
+header > img {
+    height: 100%;
+    
+}
+.page-title {
+    height: 20vh;
+    display: grid;
+    place-items: center;
+}
+button {
+    background-color:var(--main-color);
+    padding:12px 30px;
+    border-radius:15px;
+    text-decoration:none;
+    color: black;
+    cursor:pointer;
+    border: none;
+    margin: 10vh;
+    height: 9vh;
+    font-size: 3vh;
+}
+canvas {
+    border: 10px solid black;
+    border-radius: 25px;
+    margin-bottom: 4vh;
+    background-color: white;
+}
+
+/* up down layout */
+
+#up-down-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* left right layout */
+
+#left-right-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+.lrl-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lrl-side > h1 {
+    font-size: 5vh;
+}
+.lrl-side > button,
+.lrl-side > input {
+    margin: 3vh 3vw;
+    width: 80%;
+}
+.lrl-side > img {
+    height: 40vh;
+    cursor: pointer;
+}
+.lrl-side > input {
+    font-size: 5vh;
+    text-align: center;
+    border: 0.5vh solid black;
+    border-radius: 1vh; 
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    #left-right-layout {
+        grid-template-columns: 1fr;
+    }
+}

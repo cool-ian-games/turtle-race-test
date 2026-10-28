@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle race - Cool Ian games</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/turtle-race.css">
+    <link rel="icon" href="img/logo/icon.png">
+    <script src="script/utils/domVariable.js" type="module" defer></script>
+    <script src="script/utils/degreesToRadian.js" type="module" defer></script>
+    <script src="script/turtle-race.js" type="module" defer></script>
+</head>
+<body>
+    <button id="dev-menu-button"></button>
+    <div id="dev-menu">
+        <p>
+            Welkom bij de Cool Ian games turtle race test omgeving.<br>
+            Ik wil hier onderzoeken wat de beste waardes zijn voor mijn nieuwe spel.<br>
+            Mijn vraag aan jou is om hier verschillende waardes in te voeren, ermee te spelen en mij vervolgens te laten weten welke je het beste vond.<br>
+            Veel plezier!
+        </p>
+        <p>Hier kan je invullen hoeveel keer je je gegokte punten terugkrijgt per ronde.</p>
+        <input id="bet-multiplier" type="number">
+        <p>Hier kan je invullen met hoeveel punten je begint.</p>
+        <input id="start-balance" type="number"><br>
+        <button id="submit">update</button>
+        <p>Waardes werken pas nadat je op reset game drukt(helemaal onderaan)</p>
+    </div>
+    <h1 class="page-title">Turtle race - test editie</h1>
+    <div id="left-right-layout">
+        <div class="lrl-side" id="game-field-container">
+            <canvas id="game-field" width="800" height="600"></canvas>
+            <button id="start-game">Start</button>
+        </div>
+        <div class="lrl-side">
+            <h3>Balance: <span id="balance">0</span></h3>
+            <div id="bet-menu"></div>
+            <button id="reset-bet">Reset bet</button>
+            <button id="reset-game">Reset game</button>
+        </div>
+    </div>
+</body>
+</html>
